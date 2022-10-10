@@ -15,11 +15,8 @@ const generateRandomInt = (min,max) => {
 generateRandomInt(1,10);
 
 // длина строки
-const checkLength = (line, maxlength) => {
-  if (line.length > maxlength) {
-    return false;}
-  if (line.length <= maxlength) {
-    return true;}
-};
+const checkLength = (line, maxlength) =>
+  line.length <= maxlength;
+
 
 checkLength('строка',6);
