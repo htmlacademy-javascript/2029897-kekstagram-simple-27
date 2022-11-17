@@ -31,4 +31,5 @@ const createPhoto = (_elem, id) => {
 };
 
 const listPhoto = Array.from({length: 25}, createPhoto);
+
 export{listPhoto};
