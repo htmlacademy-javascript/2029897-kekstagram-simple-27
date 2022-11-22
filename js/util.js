@@ -11,8 +11,6 @@ const generateRandomInt = (min,max) => {
 
   return Math.floor (Math.random() * (max + 1 - min) + min);
 };
-export {generateRandomInt};
-
 
 // Длина строки
 const checkLength = (line, maxlength) =>
@@ -20,4 +18,7 @@ const checkLength = (line, maxlength) =>
 
 checkLength('строка', 8);
 
+// Нажатие Esc
+const isEscapeKey = (evt) => evt.key === 'Escape';
 
+export {isEscapeKey, generateRandomInt};
